@@ -32,6 +32,7 @@ body{
 .main-container{
     width: 100%;
     background-color: var(--body-background);
+
     
 }
 
@@ -42,11 +43,12 @@ nav {
     background-color: var(--pure-white);
     /* padding: 20px 50px; */
     padding: 21px 24px;
+    padding-left: 100px;
     
     
 }
 nav .company-logo{
-    margin-left: 100px;
+    
 }
 nav ul {
     display: flex;
@@ -350,10 +352,206 @@ nav ul li a{
     color: #666;
     line-height: 30px;
   }
-/* 
+
  @media (max-width:1300px){
+    .main-container{
+        
+    }
     nav {
+       margin: 5px;
+       padding: 5px;
         display:flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
- } */
+ }
+
+ @media (max-width: 1300px) {
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    nav .company-logo {
+        margin: 0 0 15px 0; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        margin: 0 0 15px 0; 
+        padding: 0;
+        gap: 24px;
+    }
+
+    nav ul li {
+        margin: 0; 
+    }
+
+   
+    nav .btn-move {
+        margin: 0; 
+        align-self: center; 
+    }
+        
+        .hero {
+            flex-direction: column; 
+            align-items: center;  
+            justify-content: center;  
+            padding: 40px 20px;     
+        }
+    
+        .hero-left {
+            margin: 0 0 40px 0; 
+            width: 100%;
+            max-width: 620px;  
+            text-align: center; 
+        }
+    
+        .hero-right {
+            margin: 0 0 10px 0;
+            width: 100%;
+            max-width: 633px;
+            height: auto; 
+            position: relative;
+        }
+    
+      
+        .hero-buttons {
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+    
+        
+        .circles, .dark-pink-box, .light-pink-box, .young-girl {
+            margin: 0 auto;
+        }
+        .young-girl{
+            margin-top: -40px;
+        }
+
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;       
+            justify-content: center; 
+            gap: 28px;            
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .card {
+            flex: 1 1 280px;      
+            max-width: 280px;    
+            min-width: 220px;     
+            height: 390px;
+            background: var(--pure-white);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: transform 0.25s ease;
+        }
+    
+}
+@media (max-width: 700px) {
+   
+    .hero-description {
+        width: 100%;      
+        max-width: 380px;   
+        font-size: 2.8vw;  
+        line-height: 3.4vh;  
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        text-align: center;  
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    .service-cards {
+        flex-direction: column; 
+        align-items: center;     
+        gap: 20px;               
+    }
+
+    .card {
+        flex: 1 1 100%;         
+        max-width: 320px;        
+        text-align: center;      
+    }
+
+    .service-box {
+        padding: 50px 20px;      
+        height: auto;           
+    }
+
+    .title-box p {
+        font-size: 22px;         
+        padding-top: 20px;
+    }
+
+   .hero-right {
+    width: 100%;
+    max-width: 633px;
+    margin: 0 auto;
+    position: relative;
+    overflow:hidden; 
+}
+
+  
+    .circles, 
+    .dark-pink-box, 
+    .light-pink-box {
+        width: 90%;           
+        max-width: 636px;
+        height: auto;           
+        margin: 0 auto;
+    }
+
+    .young-girl {
+   
+        position: relative;     
+        top: auto;
+        left: -32%;
+        margin-top: 0;      
+        width: 80%;             
+        max-width: 300px;    
+        margin: 0 auto;    
+    }
+
+    .rating-box, .resume-box {
+        position: relative;     
+        top: auto;
+        left: auto;
+        width: 90%;             
+        max-width: 350px;      
+        margin: 20px auto;      
+    }
+    .hero-left {
+        margin: 0 auto; 
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        margin: 20px auto 0 auto; 
+    }
+    
+    .hero-description {
+        margin: 20px auto; 
+    }
+    
+}
