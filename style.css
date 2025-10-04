@@ -37,6 +37,7 @@ body{
 }
 
 nav {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,14 +49,19 @@ nav {
     
 }
 nav .company-logo{
-    
+    width: 231px;
+    height: 58px;
 }
 nav ul {
     display: flex;
     list-style: none;
-    margin-left: 70px;
+    margin:29px 0;
+    
 }
 nav ul li{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
     margin: 0 24px;
 }
 nav ul li a{
@@ -81,13 +87,17 @@ nav ul li a{
   
 }
 .btn-red{
+    
     width: 147px;
     height: 46px;
     color: var(--pure-white);
     font-weight:500;
     background-color: var(--red-color);
-    padding: 12px 13px;
+    padding: 12px 22px;
     box-shadow: 0 0 12px rgba(250, 18, 57, 0.6);
+}
+.btn-red1{
+    margin-right: 100px;
 }
 
 /* nav bar section ends */
@@ -109,7 +119,7 @@ nav ul li a{
 .hero-left h1{
     font-size: 64px;
     font: bold;
-    line-height: 1.2; 
+    line-height: 78px; 
     position: relative; 
 }
 .hero-left .highlights{
@@ -139,23 +149,31 @@ nav ul li a{
     font-size: 16px;
     font-weight: 400;
     line-height: 34px;
-    margin: 38px 0 38px 0;
+    margin: 38px  38px 0 0;
 }
 .hero-buttons{
     display: flex;
-    width: 383px;
+    width: 460px;
     justify-content: space-between;
+    margin-top: 38px;
+    
 }
 .hero-buttons .btn-white{
-    width: 210px;
+    width: 302px;
     height: 46px;
     color: var(--pure-white);
     font-weight:500;
+    font-size: 18px;
     background-color: var(--pure-white);
     color: var(--red-color);
-    padding: 12px 13px;
+    padding: 12px 22px;
     box-shadow: 0 0 12px rgba(250, 18, 57, 0.6);
     border: 2px solid red;
+    margin-right: 38px;
+}
+.hero-buttons .btn-red2{
+    width: 252px;
+    height: 46px;
 }
 
 
@@ -275,14 +293,14 @@ nav ul li a{
 
 .services{
     background-color: var(--pure-white);
-    margin-top: 115px;
+    
 }
 
 .service-box{
     width: 100%;
     max-width: 1500px;
     height: 700px;
-    padding: 124px 86px;
+    padding: 50px 85px 59px 100px;
 } 
 .title-box{
     display: flex;
@@ -299,9 +317,10 @@ nav ul li a{
     background-color: #FFE7EB;
     font-size: 18px;
     font-weight: 600;
+    padding: 10px 20px;
 }
 .title-box p{
-    padding-top: 26px;
+    margin-top: 26px;
     font-size: 26px;
     font-weight: 600;
     
@@ -320,8 +339,8 @@ nav ul li a{
 
   .card {
     flex: 1 1 260px;          
-    max-width: 280px;
-    height: 390px;
+    max-width: 298px;
+    height: 450px;
     background: var(--pure-white);
     padding: 20px;
     border-radius: 12px;
@@ -336,20 +355,22 @@ nav ul li a{
   .card img {
     display: block;
     margin: 0 auto 12px;
-    width: 110px;
+    width: 200px;
+    height: 149px;
     height: auto;
   }
 
   .card h3 {
     font-size: 20px;
     font-weight: 500;
-    margin-top: 18px;
+    margin: 18px 20px 24px 20px;
     color: #111;
   }
   .card p {
-    margin-top: 24px;
+    margin: 0 20px 20px 20px;
     font-size: 18px;
-    color: #666;
+    font-weight: 400px;
+    color: #111;
     line-height: 30px;
   }
 
@@ -358,6 +379,7 @@ nav ul li a{
         
     }
     nav {
+        height: auto;
        margin: 5px;
        padding: 5px;
         display:flex;
@@ -369,7 +391,9 @@ nav ul li a{
  }
 
  @media (max-width: 1300px) {
+  
     nav {
+        height: auto;
         display: flex;
         flex-direction: column; 
         align-items: center;
@@ -446,24 +470,73 @@ nav ul li a{
             margin-top: 50px;
         }
         
+        
         .card {
-            flex: 1 1 280px;      
-            max-width: 280px;    
-            min-width: 220px;     
-            height: 390px;
+            flex: 1 1 260px;
+            max-width: 298px;
+            height: 500px;
             background: var(--pure-white);
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0,0,0,0.09);
-            text-align: center; 
+            text-align: left;
             display: flex;
             flex-direction: column;
             gap: 12px;
             transition: transform 0.25s ease;
-        }
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+}
+        
+          .card img {
+            display: block;
+            margin: 0 auto 12px;
+            width: 200px;
+            height: 149px;
+            height: auto;
+          }
+        
+          .card h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 18px 20px 24px 20px;
+            color: #111;
+          }
+          .card p {
+            margin: 0 20px 20px 20px;
+            font-size: 18px;
+            font-weight: 400px;
+            color: #111;
+            line-height: 30px;
+          }
+        
+        .hero-buttons {
+            flex-direction: column;   
+            align-items: center;      
+            justify-content: center;
+            gap: 20px;
+            width: 100%;              
+          }
+          .btn-red2{
+            margin-left: -40px;  
+          }
+          
     
 }
 @media (max-width: 700px) {
+    nav ul li {
+        margin: 0; 
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        margin: 0 5px 15px 5px; 
+        padding: 0;
+        gap: 2px;
+    }
    
     .hero-description {
         width: 100%;      
@@ -512,6 +585,13 @@ nav ul li a{
     overflow:hidden; 
 }
 
+.btn-white{
+    margin: 0;
+}
+.btn-red2{
+    margin: 0;
+}
+
   
     .circles, 
     .dark-pink-box, 
@@ -553,5 +633,15 @@ nav ul li a{
     .hero-description {
         margin: 20px auto; 
     }
+    .hero-buttons {
+        flex-direction: column;   
+        align-items: center;      
+        justify-content: center;
+        gap: 20px;
+        width: 100%;              
+      }
+      .btn-red2{
+        margin-left: -45px;  
+      }
     
 }
